@@ -21,13 +21,13 @@
     background-color: #fff9f9c9 !important;/*Selui de boustrape préveau encore*/
 }
        img.jeu {
-           width: 10vh;
+           width: 10vh; /*Largeur de l'image*/
            height: 6vh;
 
        }
 
        img.drapeau {
            width: 7vh;
-           height: 7vh;
+           height: 6vh;/*hauteur de l'image*/
 
        }
