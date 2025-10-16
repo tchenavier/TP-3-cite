@@ -35,3 +35,10 @@
        {
         margin-top: 5vh;
        }
+       img.blog
+       {
+        width:  25vh; /*Largeur de l'image*/
+        height: 25vh; /*hauteur de l'image*/
+
+
+       }
