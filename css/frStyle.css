@@ -48,8 +48,8 @@ img.blog {
 }
 
 img.miniature {
-  width: 45.4vh;
+  width: 15vh;
   /*Largeur de l'image*/
-  height: 28vh;
+  height: 10vh;
   /*hauteur de l'image*/
 }
