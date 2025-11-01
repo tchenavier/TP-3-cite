@@ -41,15 +41,21 @@ header.mb-auto {
 }
 
 img.blog {
-  width: 45.4vh;
+  width: 100%;
   /*Largeur de l'image*/
   height: 28vh;
   /*hauteur de l'image*/
 }
 
 img.miniature {
-  width: 15vh;
+  width: 45%;
   /*Largeur de l'image*/
-  height: 10vh;
+  height: 40%;
+  /*hauteur de l'image*/
+}
+img.Couverture {
+  width: 100%;
+  /*Largeur de l'image*/
+  height: 55vh;
   /*hauteur de l'image*/
 }
