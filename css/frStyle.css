@@ -62,3 +62,7 @@ img.Couverture {
 h1 {
  padding-bottom: 1vh; /*pour l'espace en bas*/
 }
+p.Prevention
+{
+  text-align: center;
+}
