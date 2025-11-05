@@ -59,6 +59,12 @@ img.Couverture {
   height: 70vh;
   /*hauteur de l'image*/
 }
+img.MiniaturePerso {
+  width: 20%;
+  /*Largeur de l'image*/
+  height: 15%;
+  /*hauteur de l'image*/
+}
 h1 {
  padding-bottom: 1vh; /*pour l'espace en bas*/
 }
