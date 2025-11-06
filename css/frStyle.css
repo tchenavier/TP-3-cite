@@ -60,9 +60,9 @@ img.Couverture {
   /*hauteur de l'image*/
 }
 img.MiniaturePerso {
-  width: 20%;
+  width: 10vh;
   /*Largeur de l'image*/
-  height: 15%;
+  height: 15vh;
   /*hauteur de l'image*/
 }
 h1 {
