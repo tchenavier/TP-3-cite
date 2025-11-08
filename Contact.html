@@ -14,41 +14,61 @@
 
 <body class="bg-body-tertiary">
     <div class="container">
-        <main>
-            <div class="py-5 text-center">
-                <header class="mb-auto"> <!--bendeau-->
-                    <div>
-                        <nav class="nav nav-masthead justify-content-center float-md-end">
-                            <a class="nav-link fw-bold py-1 px-0" aria-current="page" href="index.html">accueille</a>
-                            <a class="nav-link fw-bold py-1 px-0" href="blog/blog.html">Blog</a>
-                            <a class="nav-link fw-bold py-1 px-0" href="CV/CV_FR.html">CV</a>
-                            <a class="nav-link fw-bold py-1 px-0 active" href="Contact.html">Contact</a>
-                            <a class="nav-link fw-bold py-1 px-0" href="connection.html">Connection</a>
-                        </nav>
-                    </div>
-                </header><!--Fin bendeau-->
 
+        <header class="mb-auto"> <!--bendeau-->
+            <div>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link fw-bold py-1 px-0" aria-current="page" href="index.html">Accueille</a>
+                    <a class="nav-link fw-bold py-1 px-0" href="blog/blog.html">Blog</a>
+                    <a class="nav-link fw-bold py-1 px-0" href="CV/CV_FR.html">CV</a>
+                    <a class="nav-link fw-bold py-1 px-0 active" href="Contact.html">Contact</a>
+                    <a class="nav-link fw-bold py-1 px-0" href="connection.html">Connection</a>
+                </nav>
             </div>
-            <div class="row g-5">
-                <h1 class="h2">Information</h1>
+        </header><!--Fin bendeau-->
+        <main>
+            <div class="container">
                 <div class="col-md-7 col-lg-8">
+                    <h1 class="h2">Information de contacte</h1>
                     <form class="needs-validation" novalidate="">
                         <div class="row g-3">
-                            <blockquote><!--"paragraphe" -->
-                                <div class="col-sm-6"> <label for="firstName" class="form-label">Chenavier</label></div>
-                                <div class="col-sm-6"> <label for="firstName" class="form-label">
-                                        
-                                    </label>
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Address email </label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="Name" class="form-control" id="floatingName" placeholder="Name">
+                                <label for="floatingName">Nom</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="Age" class="form-control" id="floatingAge" placeholder="Age">
+                                <label for="floatingAge">Age</label>
+
+                                <div class="my-3">
+                                    Votre genre
+                                    <div class="form-check">
+                                        <input id="Masculin" name="genre" type="radio" class="form-check-input"
+                                            checked="" required="">
+                                        <label class="form-check-label" for="Masculin">Masculin</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="Feminin" name="genre" type="radio" class="form-check-input"
+                                            required="">
+                                        <label class="form-check-label" for="Feminin">Feminin</label>
+                                    </div>
+                                    <div class="form-check"> <input id="NePasSpecifier" name="genre" type="radio"
+                                            class="form-check-input" required="">
+                                        <label class="form-check-label" for="NePasSpecifier">Ne pas specifier</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="Message" class="form-control" id="floatingAge"
+                                            placeholder="Message">
+                                        <label for="floatingAge">Message</label>
+                                    </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <label for="firstName" class="form-label"> 
-                                    </label>
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="firstName" class="form-label"> 
-                                    </label>
-                                </div>
-                            </blockquote>
+                            </div>
+                            <button class="btn btn-primary w-100 py-2" type="submit">Envoyer</button>
                         </div>
         </main>
         <!-- <footer class="my-5 pt-5 text-body-secondary text-center text-small">
