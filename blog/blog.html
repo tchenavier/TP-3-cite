@@ -5,25 +5,31 @@
     <meta name="description" content="">
     <meta name="author" content="Thibaud Chenavier">
     <title>Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!--Include via CDN -->
     <link href="../css/frStyle.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <header class="mb-auto"> <!--bendeau-->
-            <div>
-                <nav class="nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link fw-bold py-1 px-0" aria-current="page" href="../index.html">Accueille.</a>
-                    <a class="nav-link fw-bold py-1 px-0 active" href="blog.html">Blog</a>
+        <!--bendeau-->
+        <header class="mb-auto">
+            <div class="nav-wrapper">
+                <button class="menu-toggle" id="menu-btn" aria-label="Ouvrir le menu"><!--pour mobille-->
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <nav class="nav nav-masthead" id="main-nav">
+                    <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="../index.html">Accueil</a>
+                    <a class="nav-link fw-bold py-1 px-0 active" href="blog/blog.html">Blog</a>
                     <a class="nav-link fw-bold py-1 px-0" href="../CV/CV_FR.html">CV</a>
                     <a class="nav-link fw-bold py-1 px-0" href="../Contact.html">Contact</a>
-                    <a class="nav-link fw-bold py-1 px-0" href="../connection.html">Connection</a>
+                    <a class="nav-link fw-bold py-1 px-0" href="../connection.html">Connexion</a>
                 </nav>
             </div>
-        </header><!--Fin bendeau-->
+        </header>
+        <script src="../javascript/menu_sandwich.js"></script>
+        <!--Fin bendeau-->
         <header class="border-bottom lh-1 py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
 
@@ -43,59 +49,42 @@
         </div>
     </div>
     <main class="container">
-        <div class="row g-5">
-            <div class="col-md-8"><!--Parie central-->
-                <article class="blog-post">
-                    <h2 class="display-5 link-body-emphasis mb-1">Ancien sortie</h2>
-                    <ul>
-                        <li>Vive le vent d'hiver</li>
-                        <li>l'Aube De La Nuit capitre 1,2,3</li>
-                    </ul>
-                    <blockquote><!--"paragraphe" -->
-                    </blockquote>
-                </article>
-                <article class="blog-post">
-                    <h2 class="display-5 link-body-emphasis mb-1">A venir</h2>
-                    <p class="blog-post-meta">Lundi 10 novembre 2025 .</p>
-                    <blockquote><!--"paragraphe" -->
-                        Sortie du premier chapitre de <a href="PresenttionLivre/ALaPourssuiteDuLoupNoir.html">A la
-                            pourssuite du loup noir</a>.
-                    </blockquote>
-                </article>
+    <div class="col-md-8">
+        <article class="blog-post">
+            <h2 class="display-5">Ancien sortie</h2>
+            <ul>
+                <li>Vive le vent d'hiver</li>
+                <li>L'Aube De La Nuit chapitres 1, 2, 3</li>
+            </ul>
+        </article>
 
-                <!--<nav class="blog-pagination" aria-label="Pagination">
-                    <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-                    <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a> 
-                </nav>-->
-            </div><!--Fin de la parie central-->
+        <article class="blog-post">
+            <h2 class="display-5">A venir</h2>
+            <p class="blog-post-meta">Lundi 10 novembre 2025</p>
+            <p>Sortie du premier chapitre de <a href="PresenttionLivre/ALaPourssuiteDuLoupNoir.html">A la poursuite du loup noir</a>.</p>
+        </article>
+    </div>
 
-            <div class="col-md-4"> <!--bendeau de droite-->
-                <div class="position-sticky" style="top: 2rem;">
-                    <!-- <div class="p-4 mb-3 bg-body-tertiary rounded">
-                        <h4 class="fst-italic">Evenement</h4>
-                        <p class="mb-0">Aucune annoce pour le moement.</p>
-                    </div>-->
-                    <div>
-                        <h4 class="fst-italic">Post recent</h4>
-                        <ul class="list-unstyled">
-                            <li> <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                                    href="PresenttionLivre/LeSecretDeLOmbre.html">
-                                    <img class="miniature" src="Couverture/Le secret de l'ombre.png"
-                                        alt="stellaris nemesis" /></a>
-                                <p> Fin du premier chapitre de "Le secret de l'ombre".</p>
-                            </li>
-                            <li> <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                                    href="PresenttionLivre/Contrat de Vangence.html">
-                                    <img class="miniature" src="Couverture/Contrat de Vangence.png"
-                                        alt="stellaris nemesis" /></a>
-                                <p> Fin du premier chapitre de "Contrat de Vangence".</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div><!--Fin bendeau de droite-->
-    </main>
+    <aside class="col-md-4">
+        <div class="sidebar-module">
+            <h4>Post récent</h4>
+            <ul class="list-unstyled">
+                <li class="recent-post-item">
+                    <a href="PresenttionLivre/LeSecretDeLOmbre.html">
+                        <img class="miniature" src="Couverture/Le secret de l'ombre.png" alt="Le secret de l'ombre" />
+                    </a>
+                    <p>Fin du premier chapitre de "Le secret de l'ombre".</p>
+                </li>
+                <li class="recent-post-item">
+                    <a href="PresenttionLivre/Contrat de Vangence.html">
+                        <img class="miniature" src="Couverture/Contrat de Vangence.png" alt="Contrat de Vengeance" />
+                    </a>
+                    <p>Fin du premier chapitre de "Contrat de Vengeance".</p>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</main>
 </body>
 
 </html>
