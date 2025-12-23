@@ -6,79 +6,79 @@
     <meta name="description" content="">
     <meta name="author" content="Thibaud Chenavier">
     <title>Contacte</title>
-    <link href="css/frStyle.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!--Include via CDN -->
+    <link href="css/Contact.css" rel="stylesheet">
 </head>
 
 <body class="bg-body-tertiary">
     <div class="container">
+        <!--bendeau-->
+        <header class="mb-auto">
+            <div class="nav-wrapper">
+                <button class="menu-toggle" id="menu-btn" aria-label="Ouvrir le menu"><!--pour mobille-->
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
 
-        <header class="mb-auto"> <!--bendeau-->
-            <div>
-                <nav class="nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link fw-bold py-1 px-0" aria-current="page" href="index.html">Accueille</a>
+                <nav class="nav nav-masthead" id="main-nav">
+                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="index.html">Accueil</a>
                     <a class="nav-link fw-bold py-1 px-0" href="blog/blog.html">Blog</a>
                     <a class="nav-link fw-bold py-1 px-0" href="CV/CV_FR.html">CV</a>
-                    <a class="nav-link fw-bold py-1 px-0 active" href="Contact.html">Contact</a>
-                    <a class="nav-link fw-bold py-1 px-0" href="connection.html">Connection</a>
+                    <a class="nav-link fw-bold py-1 px-0" href="Contact.html">Contact</a>
+                    <a class="nav-link fw-bold py-1 px-0" href="connection.html">Connexion</a>
                 </nav>
             </div>
-        </header><!--Fin bendeau-->
-        <main>
-            <div class="container">
-                <div class="col-md-7 col-lg-8">
-                    <h1 class="h2">Information de contacte</h1>
-                    <form class="needs-validation" novalidate="">
-                        <div class="row g-3">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="floatingInput"
-                                    placeholder="name@example.com">
-                                <label for="floatingInput">Address email </label>
-                            </div>
-                            <div class="form-floating">
-                                <input type="Name" class="form-control" id="floatingName" placeholder="Name">
-                                <label for="floatingName">Nom</label>
-                            </div>
-                            <div class="form-floating">
-                                <input type="Age" class="form-control" id="floatingAge" placeholder="Age">
-                                <label for="floatingAge">Age</label>
+        </header>
+        <script src="javascript/menu_sandwich.js"></script>
+        <!--Fin bendeau-->
 
-                                <div class="my-3">
-                                    Votre genre
-                                    <div class="form-check">
-                                        <input id="Masculin" name="genre" type="radio" class="form-check-input"
-                                            checked="" required="">
-                                        <label class="form-check-label" for="Masculin">Masculin</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="Feminin" name="genre" type="radio" class="form-check-input"
-                                            required="">
-                                        <label class="form-check-label" for="Feminin">Feminin</label>
-                                    </div>
-                                    <div class="form-check"> <input id="NePasSpecifier" name="genre" type="radio"
-                                            class="form-check-input" required="">
-                                        <label class="form-check-label" for="NePasSpecifier">Ne pas specifier</label>
-                                    </div>
-                                    <div class="form-floating">
-                                        <input type="Message" class="form-control" id="floatingAge"
-                                            placeholder="Message">
-                                        <label for="floatingAge">Message</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="btn btn-primary w-100 py-2" type="submit">Envoyer</button>
+        <main>
+            <div class="contact-form-container">
+                <h1 class="form-title">Information de contact</h1>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Adresse email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Nom</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" id="age" placeholder=" ">
+                        <label for="age">Age</label>
+                    </div>
+
+                    <div class="gender-section">
+                        <p>Votre genre</p>
+                        <div class="radio-group">
+                            <label class="radio-item">
+                                <input type="radio" name="genre" value="Masculin" checked>
+                                <span>Masculin</span>
+                            </label>
+                            <label class="radio-item">
+                                <input type="radio" name="genre" value="Feminin">
+                                <span>Féminin</span>
+                            </label>
+                            <label class="radio-item">
+                                <input type="radio" name="genre" value="NePasSpecifier">
+                                <span>Ne pas spécifier</span>
+                            </label>
                         </div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" placeholder=" " rows="4" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Envoyer</button>
+                </form>
+            </div>
         </main>
-        <!-- <footer class="my-5 pt-5 text-body-secondary text-center text-small">
-            <p class="mb-1">© 2017–2025 Company Name</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Privacy</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Support</a></li>
-            </ul>
-        </footer>-->
     </div>
 </body>
 

@@ -1,0 +1,105 @@
+/* --- BASES ET TYPOGRAPHIE --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8f9fa; /* bg-body-tertiary */
+    color: #212529;
+    margin: 0; padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- NAVIGATION (REPRISE DES PAGES PRÉCÉDENTES) --- */
+header { padding: 1.5rem 0; }
+.nav-wrapper { display: flex; justify-content: flex-end; align-items: center; }
+.nav-masthead { display: flex; gap: 1.5rem; }
+.nav-link {
+    text-decoration: none; color: #212529; font-weight: bold;
+    padding-bottom: 5px; border-bottom: 2px solid transparent;
+}
+.nav-link.active { border-bottom-color: #212529; }
+
+/* --- STRUCTURE DU FORMULAIRE --- */
+.contact-form-container {
+    max-width: 700px; /* col-md-7 */
+    margin: 2rem 0;
+}
+
+.form-title { font-size: 2rem; margin-bottom: 2rem; }
+
+/* --- EFFET FLOATING LABELS --- */
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 1.5rem 0.75rem 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group label {
+    position: absolute;
+    top: 1rem; left: 0.75rem;
+    color: #6c757d;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+/* Animation du label quand on clique ou écrit */
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:not(:placeholder-shown) ~ label {
+    top: 0.3rem;
+    font-size: 0.75rem;
+    color: #0d6efd;
+}
+
+.form-group input:focus { border-color: #0d6efd; box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25); }
+
+/* --- SECTION GENRE --- */
+.gender-section { margin: 1.5rem 0; }
+.gender-section p { font-weight: 500; margin-bottom: 0.5rem; }
+.radio-group { display: flex; flex-direction: column; gap: 0.5rem; }
+.radio-item { display: flex; align-items: center; gap: 0.5rem; cursor: pointer; }
+
+/* --- BOUTON ENVOYER --- */
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0d6efd; /* Bleu Bootstrap primary */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover { background-color: #0b5ed7; }
+
+/* --- MENU RESPONSIVE (MOBILE) --- */
+.menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
+.menu-toggle .bar { height: 3px; width: 25px; background-color: #212529; border-radius: 10px; }
+
+@media (max-width: 768px) {
+    .menu-toggle { display: flex; }
+    .nav-masthead {
+        display: none; position: absolute; top: 60px; right: 20px;
+        background: white; width: 200px; padding: 1rem;
+        border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); z-index: 100;
+        flex-direction: column;
+    }
+    .nav-masthead.open { display: flex; }
+}
