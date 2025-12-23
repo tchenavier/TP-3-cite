@@ -1,107 +1,119 @@
-
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none
-}
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem
-    }
-}
-
-.b-example-divider {
-    width: 100%;
-    height: 3rem;
-    background-color: #0000001a;
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em #0000001a, inset 0 .125em .5em #00000026
-}
-
-.b-example-vr {
-    flex-shrink: 0;
-    width: 1.5rem;
-    height: 100vh
-}
-
-.bi {
-    vertical-align: -.125em;
-    fill: currentColor
-}
-
-.nav-scroller {
-    position: relative;
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden
-}
-
-.nav-scroller .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch
-}
-
-.btn-bd-primary {
-    --bd-violet-bg: #712cf9;
-    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-    --bs-btn-font-weight: 600;
-    --bs-btn-color: var(--bs-white);
-    --bs-btn-bg: var(--bd-violet-bg);
-    --bs-btn-border-color: var(--bd-violet-bg);
-    --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #6528e0;
-    --bs-btn-hover-border-color: #6528e0;
-    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-    --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #5a23c8;
-    --bs-btn-active-border-color: #5a23c8
-}
-
-.bd-mode-toggle {
-    z-index: 1500
-}
-
-.bd-mode-toggle .bi {
-    width: 1em;
-    height: 1em
-}
-
-.bd-mode-toggle .dropdown-menu .active .bi {
-    display: block !important
-}
-
-html,
-body {
+/* --- MISE EN PAGE GLOBALE --- */
+html, body {
     height: 100%;
 }
 
+body.signin-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #f8f9fa; /* bg-body-tertiary */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
 .form-signin {
+    width: 100%;
     max-width: 330px;
-    padding: 1rem;
+    padding: 15px;
 }
 
-.form-signin .form-floating:focus-within {
-    z-index: 2;
+.form-title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    text-align: left;
 }
 
-.form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+/* --- EFFET FLOATING LABELS (Identique à la page Contact) --- */
+.form-group {
+    position: relative;
+    margin-bottom: -1px; /* Pour coller les deux champs ensemble comme sur l'image */
 }
 
-.form-signin input[type="password"] {
+.form-group input {
+    width: 100%;
+    padding: 1.5rem 0.75rem 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #dee2e6;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.2s, z-index 0.2s;
+}
+
+/* Coins arrondis uniquement en haut pour l'email et en bas pour le password */
+.form-group:first-of-type input {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.form-group:last-of-type input {
     margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.form-group input:focus {
+    z-index: 2;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+.form-group label {
+    position: absolute;
+    top: 1rem; left: 0.75rem;
+    color: #6c757d;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label {
+    top: 0.3rem;
+    font-size: 0.75rem;
+    color: #0d6efd;
+}
+
+/* --- CASE À COCHER --- */
+.form-check {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* --- BOUTONS --- */
+.btn-signin {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0d6efd; /* Bleu Bootstrap */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 10px;
+}
+
+.btn-signin:hover {
+    background-color: #0b5ed7;
+}
+
+.btn-retour {
+    display: block;
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.btn-retour:hover {
+    background-color: #f8f9fa;
 }
