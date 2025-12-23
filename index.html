@@ -5,35 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>accueille</title>
+    <title>accueil</title>
     <link rel='stylesheet' type='text/css' href='css/Home.css'>
     <script src="javascript/base.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!--bootstrap-->
 
 </head>
 
 <body class="d-flex h-100 text-center text-bg-dark">
 
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="mb-auto"> <!--bendeau-->
-            <div>
-                <nav class="nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="index.html">Accueille</a>
+        <!--bendeau-->
+        <header class="mb-auto">
+            <div class="nav-wrapper">
+                <button class="menu-toggle" id="menu-btn" aria-label="Ouvrir le menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <nav class="nav nav-masthead" id="main-nav">
+                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="index.html">Accueil</a>
                     <a class="nav-link fw-bold py-1 px-0" href="blog/blog.html">Blog</a>
                     <a class="nav-link fw-bold py-1 px-0" href="CV/CV_FR.html">CV</a>
                     <a class="nav-link fw-bold py-1 px-0" href="Contact.html">Contact</a>
-                    <a class="nav-link fw-bold py-1 px-0" href="connection.html">Connection</a>
+                    <a class="nav-link fw-bold py-1 px-0" href="connection.html">Connexion</a>
                 </nav>
             </div>
-        </header><!--Fin bendeau-->
+        </header>
+        <script src="javascript/menu_sandwich.js"></script>
+        <!--Fin bendeau-->
         <main class="px-3">
             <h1></h1>
             <p class="lead">Bonjour, puissiez vous trouver ce que vous cherchez.</p>
         </main>
         <footer class="mt-auto text-white-50">
-         <!--   <p> Quelle que chose ici</p>-->
+            <!--   <p> Quelle que chose ici</p>-->
         </footer>
     </div>
 </body>
