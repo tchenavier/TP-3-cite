@@ -6,9 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Thibaud Chenavier">
     <title>Histoir écrite</title>
-
     <link rel='stylesheet' type='text/css' href='../css/frStyle.css'>
-
 </head>
 
 <body>
@@ -24,7 +22,7 @@
 
                 <nav class="nav nav-masthead" id="main-nav">
                     <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="../index.html">Accueil</a>
-                    <a class="nav-link fw-bold py-1 px-0 active" href="blog/blog.html">Blog</a>
+                    <a class="nav-link fw-bold py-1 px-0 active" href="../blog/blog.html">Blog</a>
                     <a class="nav-link fw-bold py-1 px-0" href="../CV/CV_FR.html">CV</a>
                     <a class="nav-link fw-bold py-1 px-0" href="../Contact.html">Contact</a>
                     <a class="nav-link fw-bold py-1 px-0" href="../connection.html">Connexion</a>
@@ -47,127 +45,86 @@
         </header>
     </div>
     <main>
-        <p class="Prevention">Les illustrations sont générées par Intelligence artificielle, car je ne sais pas
-            suffisamment bien dessiner. Néanmoins les couleurs on étais adapter.</p>
-        <div class="album py-5 bg-body-tertiary">
+        <p class="prevention">Les illustrations sont générées par Intelligence artificielle, car je ne sais pas
+            suffisamment bien dessiner. Néanmoins les couleurs ont été adaptées.</p>
 
+        <section class="album">
             <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col"><!--Partie Aube De La Nuit-->
-                        <div class="card shadow-sm">
-                            <title>L'aube de la Nuit</title>
-                            <img class="Couverture" src="Couverture/AubeDeLaNuit.png" alt="L'Aube De La Nuit" />
-                            <div class="card-body">
-                                <p class="card-text">Si votre ennemie jurée vous proposait de vous aider, après vous
-                                    avoir tout pris est-ce que vous accepteriez son aide ?</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a class="nav-item nav-link link-body-emphasis active"
-                                            href="PresenttionLivre/AubeDeLaNuit.html">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
-                                        </a>
-                                    </div>
-                                </div>
+                <div class="card-grid">
+                    <article class="card">
+                        <img class="couverture" src="Couverture/AubeDeLaNuit.png" alt="L'Aube De La Nuit" />
+                        <div class="card-body">
+                            <h3 class="card-title">L'aube de la Nuit</h3>
+                            <p class="card-text">Si votre ennemie jurée vous proposait de vous aider, après vous avoir
+                                tout pris est-ce que vous accepteriez son aide ?</p>
+                            <div class="card-footer">
+                                <a href="PresenttionLivre/AubeDeLaNuit.html" class="btn-voir_AubeDeLaNuit">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col"><!--Contrat de Vangence-->
-                        <div class="card shadow-sm">
-                            <title>Contrat de Vangence</title>
-                            <img class="Couverture" src="Couverture/Contrat de Vangence.png"
-                                alt="Contrat de Vangence" />
-                            <div class="card-body">
-                                <p class="card-text">Que seriez vous prêts à faire pour vous vengez ?</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a class="nav-item nav-link link-body-emphasis active"
-                                            href="PresenttionLivre/Contrat de Vangence.html">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
-                                        </a>
-                                    </div>
-                                </div>
+                    </article>
+                    <article class="card">
+                        <img class="couverture" src="Couverture/Contrat de Vangence.png" alt="Contrat de Vengeance" />
+                        <div class="card-body">
+                            <h3 class="card-title">Contrat de Vengeance</h3>
+                            <p class="card-text">Que seriez-vous prêts à faire pour vous venger ?</p>
+                            <div class="card-footer">
+                                <a href="PresenttionLivre/Contrat de Vangence.html"
+                                    class="btn-voir_Contrat_de_Vangence">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col"><!--Vive le vent d’hiver-->
-                        <div class="card shadow-sm">
-                            <title>Vive le vent d'hiver</title>
-                            <img class="Couverture" src="Couverture/ViveLeVentDHiver.png" alt="Vive le vent d'hiver" />
-                            <div class="card-body">
-                                <p class="card-text">Si la veille de noël vous receviez une lettre d'une inconnue, iriez
-                                    vous au rendez vous ?</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a class="nav-item nav-link link-body-emphasis active"
-                                            href="PresenttionLivre/ViveLeVentDHiver.html">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
-                                        </a>
-                                    </div>
-                                </div>
+                    </article>
+
+                    <article class="card">
+                        <img class="couverture" src="Couverture/ViveLeVentDHiver.png" alt="Vive le vent d'hiver" />
+                        <div class="card-body">
+                            <h3 class="card-title">Vive le vent d'hiver</h3>
+                            <p class="card-text">Si la veille de Noël vous receviez une lettre d'une inconnue,
+                                iriez-vous au rendez-vous ?</p>
+                            <div class="card-footer">
+                                <a href="PresenttionLivre/ViveLeVentDHiver.html" class="btn-voir_ViveLeVentDHiver">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col"><!--A la pourssuite du loup noir-->
-                        <div class="card shadow-sm">
-                            <title>A la pourssuite du loup noir</title>
-                            <img class="Couverture" src="Couverture/A la poursuite du loup noir.png"
-                                alt="A la pourssuite du loup noir" />
-                            <div class="card-body">
-                                <p class="card-text">Après un dur combat Claire finit par défaire son ennemi mais est-ce
-                                    qu'elle est vraiment morte ?</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a class="nav-item nav-link link-body-emphasis active"
-                                            href="PresenttionLivre/ALaPourssuiteDuLoupNoir.html">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
-                                        </a>
-                                    </div>
-                                </div>
+                    </article>
+
+                    <article class="card">
+                        <img class="couverture" src="Couverture/A la poursuite du loup noir.png"
+                            alt="A la poursuite du loup noir" />
+                        <div class="card-body">
+                            <h3 class="card-title">À la poursuite du loup noir</h3>
+                            <p class="card-text">Après un dur combat, Claire finit par défaire son ennemi, mais est-ce
+                                qu'elle est vraiment morte ?</p>
+                            <div class="card-footer">
+                                <a href="PresenttionLivre/ALaPourssuiteDuLoupNoir.html"
+                                    class="btn-voir_ALaPourssuiteDuLoupNoir">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col"><!--Le secret de l'ombre-->
-                        <div class="card shadow-sm">
-                            <title>Le secret de l'ombre</title>
-                            <img class="Couverture" src="Couverture/Le secret de l'ombre.png"
-                                alt="Le secret de l'ombre" />
-                            </svg>
-                            <div class="card-body">
-                                <p class="card-text">Que cherchiez vous à faire si en arrivant dans un autre monde, vaux
-                                    camarade vous avait laissé en pâture aux monstres pour pouvoir fuir ?</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a class="nav-item nav-link link-body-emphasis active"
-                                            href="PresenttionLivre/LeSecretDeLOmbre.html">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
-                                        </a>
-                                    </div>
-                                </div>
+                    </article>
+
+                    <article class="card">
+                        <img class="couverture" src="Couverture/Le secret de l'ombre.png" alt="Le secret de l'ombre" />
+                        <div class="card-body">
+                            <h3 class="card-title">Le secret de l'ombre</h3>
+                            <p class="card-text">Que chercheriez-vous à faire si, en arrivant dans un autre monde, vos
+                                camarades vous avaient laissé en pâture aux monstres pour pouvoir fuir ?</p>
+                            <div class="card-footer">
+                                <a href="PresenttionLivre/LeSecretDeLOmbre.html" class="btn-voir_LeSecretDeLOmbre">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col"><!--7 seaux avant demain-->
-                        <div class="card shadow-sm">
-                            <title>7 seaux avant demain</title>
-                            <img class="Couverture" src="Couverture/Intero.png" alt="7 seaux avant demain" />
-                            </svg>
-                            <div class="card-body">
-                                <p class="card-text"> </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <!-- <div class="btn-group">
-                                        <a class="nav-item nav-link link-body-emphasis active"
-                                            href="PresenttionLivre/ALaPourssuiteDuLoupNoir.html">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
-                                        </a>
-                                    </div>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
 
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 
