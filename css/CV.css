@@ -89,8 +89,8 @@ header {
 .sub-list li {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 8px;
+    gap: 5%;
+    margin-bottom: 2%;
 }
 
 .jeu-mini {
@@ -108,8 +108,8 @@ header {
 .sidebar-box {
     background-color: #f8f9fa;
     /* bg-body-tertiary */
-    padding: 1.5rem;
-    border-radius: 8px;
+    padding: 1.5%;
+    border-radius: 1%;
 }
 
 .sidebar-box h4 {
