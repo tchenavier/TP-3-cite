@@ -6,16 +6,14 @@
     <meta name="description" content="">
     <meta name="author" content="Thibaud Chenavier">
     <title>CV</title>
-    <link href="../css/frStyle.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!--Include via CDN -->
+    <link href="../css/CV.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="container">
 
-    <main class="container">
-      <header><!--Bendeau-->
+
+        <header><!--Bendeau-->
             <div class="nav-wrapper">
                 <button class="menu-toggle" id="menu-btn" aria-label="Ouvrir le menu">
                     <span class="bar"></span>
@@ -31,21 +29,20 @@
                     <a class="nav-link" href="../connection.html">Connexion</a>
                 </nav>
             </div>
+            <script src="../javascript/menu_sandwich.js"></script>
         </header><!--Fin bendeau-->
-        <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-            <div class="col-lg-6 px-0">
-                <h1 class="display-4 fst-italic">Etudiant</h1>
-                <p class="lead my-3">Fais un BTS CIEL.</p>
-            </div>
-        </div>
-        <div class="row mb-2">
-        </div>
-        <div class="row g-5">
-            <div class="col-md-8">
-                <article class="blog-post">
-                    <h2 class="display-5 link-body-emphasis mb-1">Curriculum vitae</h2>
+
+        <main>
+            <section class="hero-cv">
+                <h1 class="display-title">Etudiant</h1>
+                <p class="lead-text">Actuellement en Brevet de Technicien Supérieur (BTS) Systèmes Numériques.</p>
+            </section>
+
+            <div class="cv-grid">
+                <article class="cv-content">
+                    <h2 class="section-title">Curriculum vitae</h2>
                     <h2>étude</h2>
-                    <ul>
+                    <ul class="cv-list">
                         <li>2025 Higher National Diploma Digital systeme .</li>
                         <li>2024 has 2025 level Bachelor of Sciences (degree science for engineer electronic,
                             electricity and automatic).</li>
@@ -53,62 +50,60 @@
                         <li>2022 National Vocational qualification.</li>
                         <li>General certificate of Secondly.</li>
                     </ul>
-                    <!-- <h3>Example lists</h3>-->
-                    <h2>Experiance profesionelle</h2>
+
+                    <h3>Experiance profesionelle</h3>
                     Stage dans l'entreprise Chevalier Bisieaux, dans le cadre de mon BTS electrotechnique.
 
                     <h2>Compétence linguistique</h2>
-                    <li>Langue maternel Français</li>
-                    <li>niveau moyens en anglais</li>
-                    <li>niveau bas en allemand</li>
+                    <ul class="cv-list">
+                        <li>Langue maternel Français</li>
+                        <li>niveau moyens en anglais</li>
+                        <li>niveau bas en allemand</li>
+                    </ul>
 
                     <h2>Compétance</h2>
-                    <ul>
+                    <ul class="cv-list">
                         <li>codeur html .</li>
                         <li>Montage.</li>
                         <li>Lecture de plan électrique.</li>
                         <li>Diagnostique d'infrastructure électriqu.</li>
                     </ul>
                     <h2>Occupation</h2>
-                    <ul>
+                    <ul class="cv-list">
                         <li><a href="../blog/presentationHistoire.html">Ecriture de fiction.</a></li>
                         <li>Lecture.</li>
-                        <li>jeux vidéo.
-                            <ul>
-                                <li>Stelaris <img class="jeu" src="imag/stellarisNemesis.png"
+                        <li>jeux vidéo :
+                            <ul class="sub-list">
+                                <li>Stelaris <img class="jeu-mini" src="imag/stellarisNemesis.png"
                                         alt="stellaris nemesis" />
                                 </li>
-                                <li> Heart of Iron 4 <img class="jeu" src="imag/HeartsOfIron4Resistance.png"
+                                <li> Heart of Iron 4 <img class="jeu-mini" src="imag/HeartsOfIron4Resistance.png"
                                         alt="Heart of Iron 4 resistance" />
                                 </li>
                         </li>
-                        <li> Europa universali 4 <img class="jeu" src="imag/EuropaUniversalis4.png"
+                        <li> Europa universali 4 <img class="jeu-mini" src="imag/EuropaUniversalis4.png"
                                 alt="Europa universali 4" /></li>
                         </li>
                     </ul>
                 </article>
             </div>
-            <div class="col-md-4">
-                <div class="position-sticky" style="top: 2rem;">
-                    <div class="p-4 mb-3 bg-body-tertiary rounded">
-                        <h4 class="fst-italic">Contact</h4>
-                        <p>Thibaud</p>
-                        <p>Chenavier</p>
-                        <p>Né le 13/04/2003</p>
-                        <p>E-mail thibaud.chenavier@gmail.com</p>
-                    </div>
-                </div>
+        </main>
+
+        <aside class="cv-sidebar">
+            <div class="sidebar-box">
+                <h4>Contact</h4>
+                <p><strong>Prénom :</strong> Thibaud</p>
+                <p><strong>Nom :</strong> Chenavier</p>
+                <p><strong>Année :</strong> Né le 13/04/2003e</p>
+                <p><strong>E-mail :</strong> thibaud.chenavier@gmail.com</p>
             </div>
-        </div>
-    </main>
-    <!--<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
-                href="https://x.com/mdo">@mdo</a>.</p>
-        <p class="mb-0"> <a href="#">Back to top</a> </p>
-    </footer>-->
-    <a href="CV_EN.html">
-        <img class="drapeau" src="imag/drapeauAnglais.png" alt="English" />
-    </a>
+        </aside>
+        <footer class="cv-footer">
+            <a href="CV_EN.html">
+                <img class="drapeau" src="imag/drapeauAnglais.png" alt="English" />
+            </a>
+        </footer>
+    </div>
 </body>
 
 </html>

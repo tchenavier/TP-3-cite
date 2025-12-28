@@ -94,8 +94,8 @@ header {
 }
 
 .jeu-mini {
-    width: 30px;
-    height: 30px;
+    width: 15%;
+    height: 15%;
     object-fit: contain;
 }
 
@@ -141,7 +141,7 @@ header {
 }
 
 .drapeau {
-    width: 30px;
+    width: 10%;
     height: auto;
 }
 

@@ -6,41 +6,45 @@
     <meta name="description" content="">
     <meta name="author" content="Thibaud Chenavier">
     <title>CV</title>
-    <link href="../css/frStyle.css" rel="stylesheet"><!-- ../ pour revenir en arrière-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!--Include via CDN -->
+    <link href="../css/CV.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="container">
 
-    <main class="container">
-    <header class="mb-auto"> <!--bendeau-->
-        <div>
-            <nav class="nav nav-masthead justify-content-center float-md-end">
-                <a class="nav-link fw-bold py-1 px-0" aria-current="page" href="../index.html">Home</a>
-                <a class="nav-link fw-bold py-1 px-0" href="../blog/blog.html">Blog</a>
-                <a class="nav-link fw-bold py-1 px-0 active" href="CV_FR.html">CV</a>
-                <a class="nav-link fw-bold py-1 px-0" href="../Contact.html">Contact</a>
-                <a class="nav-link fw-bold py-1 px-0" href="../connection.html">Connection</a>
-                
-            </nav>
-        </div>
-    </header><!--Fin bendeau-->        
-        <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-            <div class="col-lg-6 px-0">
-                <h1 class="display-4 fst-italic">student</h1>
-                <p class="lead my-3">Is in Higher National Diploma Digital systeme.</p>
+
+        <header><!--Bendeau-->
+            <div class="nav-wrapper">
+                <button class="menu-toggle" id="menu-btn" aria-label="Ouvrir le menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link" href="../blog/blog.html">Blog</a>
+                    <a class="nav-link active" href="CV_FR.html">CV</a>
+                    <a class="nav-link" href="../Contact.html">Contact</a>
+                    <a class="nav-link" href="../connection.html">Connection</a>
+
+                </nav>
             </div>
-        </div>
-        <div class="row mb-2">
-        </div>
-        <div class="row g-5">
-            <div class="col-md-8">
-                <article class="blog-post">
-                    <h2 class="display-5 link-body-emphasis mb-1">Curriculum vitae</h2>
+            <script src="../javascript/menu_sandwich.js"></script>
+        </header><!--Fin bendeau-->
+        <main>
+
+            <section class="hero-cv">
+                <h1 class="display-title">student</h1>
+                <p class="lead-text">Is in Higher National Diploma Digital systeme.</p>
+            </section>
+
+
+            <div class="cv-grid">
+                <article class="cv-content">
+                    <h2 class="section-title">Curriculum vitae</h2>
                     <h2>Education</h2>
-                    <ul>
+                    <ul class="cv-list">
                         <li>2025 Higher National Diploma Digital systeme .</li>
                         <li>2024 has 2025 level Bachelor of Sciences (degree science for engineer electronic,
                             electricity and automatic).</li>
@@ -48,17 +52,19 @@
                         <li>2022 National Vocational qualification.</li>
                         <li>General certificate of Secondly.</li>
                     </ul>
-                    <!-- <h3>Example lists</h3>-->
+
                     <h2>Work Experience</h2>
                     Internship in electrical entreprise Chevalier Bisieaux
 
                     <h2>language Skills</h2>
-                    <li>Fluent french</li>
-                    <li>Medium in english</li>
-                    <li>Beginner in German</li>
+                    <ul class="cv-list">
+                        <li>Fluent french</li>
+                        <li>Medium in english</li>
+                        <li>Beginner in German</li>
+                    </ul>
 
                     <h2>Skills</h2>
-                    <ul>
+                    <ul class="cv-list">
                         <li>Coder HTML</li>
                         <li>Assembly video</li>
                         <li>Reading electronic plan</li>
@@ -67,53 +73,49 @@
                         <li>Niveau bas en allemand.</li>
                     </ul>
                     <h2>software to use</h2>
-                    <ul>
+                    <ul class="cv-list">
                         <li>Word, Excel, etc</li>
                         <li>Visual Studio</li>
                     </ul>
 
                     <h2>hobbies</h2>
-                    <ul>
+                    <ul class="cv-list">
                         <li><a href="../blog/presentationHistoire.html">Reading fiction</a></li>
                         <li>Writing</li>
                         <li>Video games
-                            <ul>
-                                <li>Stelaris <img class="jeu" src="imag/stellarisNemesis.png"
+                            <ul class="sub-list">
+                                <li>Stelaris <img class="jeu-mini" src="imag/stellarisNemesis.png"
                                         alt="stellaris nemesis" />
                                 </li>
-                                <li> Heart of Iron 4 <img class="jeu" src="imag/HeartsOfIron4Resistance.png"
+                                <li> Heart of Iron 4 <img class="jeu-mini" src="imag/HeartsOfIron4Resistance.png"
                                         alt="Heart of Iron 4 resistance" />
                                 </li>
                         </li>
-                        <li> Europa universali 4 <img class="jeu" src="imag/EuropaUniversalis4.png"
+                        <li> Europa universali 4 <img class="jeu-mini" src="imag/EuropaUniversalis4.png"
                                 alt="Europa universali 4" /></li>
                         </li>
                     </ul>
                     </li>
                     </ul>
                 </article>
-            </div>
-            <div class="col-md-4"> <!--Barre laterrale-->
-                <div class="position-sticky" style="top: 2rem;">
-                    <div class="p-4 mb-3 bg-body-tertiary rounded">
-                        <h4 class="fst-italic">Contact</h4>
+
+                <aside class="cv-sidebar"><!--Barre laterrale-->
+                    <div class="sidebar-box">
+                        <h4>Contact</h4>
                         <p>Thibaud</p>
                         <p>Chenavier</p>
                         <p>born 13/04/2003</p>
                         <p>E-mail thibaud.chenavier@gmail.com</p>
                     </div>
-                </div>
+                </aside>
             </div>
-        </div>
-    </main>
-    <!--<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
-                href="https://x.com/mdo">@mdo</a>.</p>
-        <p class="mb-0"> <a href="#">Back to top</a> </p>
-    </footer>-->
-    <a href="CV_FR.html">
-        <img class="drapeau" src="imag/drapeauFrancais.png" alt="Francais" />
-    </a>
+        </main>
+        <footer class="cv-footer">
+            <a href="CV_FR.html">
+                <img class="drapeau" src="imag/drapeauFrancais.png" alt="Francais" />
+            </a>
+        </footer>
+    </div>
 </body>
 
 </html>
